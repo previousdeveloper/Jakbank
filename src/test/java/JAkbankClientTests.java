@@ -7,6 +7,8 @@ import lib.response.*;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
+import retrofit2.Call;
+import retrofit2.Callback;
 import retrofit2.Response;
 
 import java.io.IOException;
@@ -167,6 +169,24 @@ public class JAkbankClientTests {
         Configuration configuration = new Configuration("", "");
 
         configuration.setLogEnabled(true);
+    }
+
+    @Test
+    public void callAsync() {
+
+        Call<CreditInterestRatesRecordReponse> result = client.build().creditInterestRates("I");
+        result.enqueue(new Callback<CreditInterestRatesRecordReponse>() {
+            @Override
+            public void onResponse(Response<CreditInterestRatesRecordReponse> response) {
+
+            }
+
+            @Override
+            public void onFailure(Throwable throwable) {
+
+            }
+        });
+
     }
 
 }
