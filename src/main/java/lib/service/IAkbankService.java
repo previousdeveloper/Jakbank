@@ -27,7 +27,7 @@ public interface IAkbankService {
     Call<CreditInterestRatesRecordReponse> creditInterestRates(@Query("creditType") String creditType);
 
     @GET("fundPrices")
-    Call<FundRecordResponse> fundType(@Query("fundType") String fundType);
+    Call<FundPricesRecordResponse> fundPrices(@Query("fundType") String fundType);
 
     @POST("findBranch")
     Call<BranchRecordResponse> findBranch(@Body FindRequest request);

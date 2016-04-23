@@ -29,10 +29,10 @@
 
 
         <dependency>
-           <groupId>com.squareup.retrofit2</groupId>
-           <artifactId>converter-gson</artifactId>
-           <version>2.0.0-beta3</version>
-       </dependency>
+            <groupId>com.squareup.retrofit2</groupId>
+            <artifactId>converter-gson</artifactId>
+            <version>2.0.0-beta3</version>
+        </dependency>
 
         <dependency>
             <groupId>com.squareup.okhttp3</groupId>
@@ -40,6 +40,25 @@
             <version>3.2.0</version>
         </dependency>
 
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>3.4.1</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.flextrade.jfixture</groupId>
+            <artifactId>jfixture</artifactId>
+            <version>2.2.0</version>
+        </dependency>
 
     </dependencies>
 

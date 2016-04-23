@@ -5,7 +5,7 @@ import lib.model.FundRecord;
 import java.util.List;
 
 
-public class FundRecordResponse extends BaseResponse {
+public class FundPricesRecordResponse extends BaseResponse {
 
     private List<FundRecord> fundRecords;
 
